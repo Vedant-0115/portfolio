@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Vedant Pawar – AI & Data Science Student</title>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@500;700;800&family=Instrument+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#f1f3fb;--surface:#fff;--ink:#14173a;--muted:#555a80;--line:#d5d9ee;--accent:#2b3fe0;--accent-ink:#fff;--soft:#e1e5fb;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0f1226;--surface:#171b38;--ink:#eceefc;--muted:#a3a8cf;--line:#2a2f58;--accent:#8b9bff;--accent-ink:#0f1226;--soft:#222850}}
+:root[data-theme="dark"]{--bg:#0f1226;--surface:#171b38;--ink:#eceefc;--muted:#a3a8cf;--line:#2a2f58;--accent:#8b9bff;--accent-ink:#0f1226;--soft:#222850}
+html{scroll-padding-top:env(safe-area-inset-top,0px);scroll-behavior:smooth}
+*,*::before,*::after{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 17px/1.65 "Instrument Sans",system-ui,sans-serif}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--accent);outline-offset:3px;border-radius:4px}
+.wrap{max-width:1020px;margin:0 auto;padding:0 22px}
+header.nav{display:flex;justify-content:space-between;align-items:center;padding:20px 0}
+.logo{font:800 20px "Bricolage Grotesque",sans-serif;text-decoration:none}
+nav a{margin-left:20px;text-decoration:none;color:var(--muted);font-weight:500;font-size:15px}
+nav a:hover{color:var(--accent)}
+#theme{margin-left:20px;background:none;border:1px solid var(--line);color:var(--ink);border-radius:99px;padding:5px 12px;font:inherit;font-size:14px;cursor:pointer}
+.hero{padding:56px 0 40px}
+.hero h1{font:800 clamp(52px,12vw,128px)/.92 "Bricolage Grotesque",sans-serif;letter-spacing:-.035em;margin:0 0 26px}
+.hero h1 span{display:block;color:var(--accent)}
+.lede{max-width:34em;font-size:20px;color:var(--muted);margin:0 0 28px}
+.lede b{color:var(--ink);font-weight:600}
+.btns{display:flex;flex-wrap:wrap;gap:12px}
+.btn{display:inline-block;padding:12px 22px;border-radius:10px;font-weight:600;text-decoration:none;border:2px solid var(--accent)}
+.btn.p{background:var(--accent);color:var(--accent-ink)}
+.btn:hover{transform:translateY(-2px)}
+.nodes{margin-top:44px;background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:18px 20px}
+.nodes p{margin:0 0 12px;font-size:14px;color:var(--muted)}
+.grid8{display:grid;grid-template-columns:repeat(8,1fr);gap:8px}
+.node{height:46px;border-radius:8px;background:var(--soft);border:1px solid var(--line);position:relative;overflow:hidden}
+.node i{position:absolute;inset:0;background:var(--accent);opacity:0;animation:pulse 6.4s infinite}
+.node:nth-child(1) i{animation-delay:0s}.node:nth-child(2) i{animation-delay:.8s}.node:nth-child(3) i{animation-delay:1.6s}.node:nth-child(4) i{animation-delay:2.4s}.node:nth-child(5) i{animation-delay:3.2s}.node:nth-child(6) i{animation-delay:4s}.node:nth-child(7) i{animation-delay:4.8s}.node:nth-child(8) i{animation-delay:5.6s}
+@keyframes pulse{0%,12%,100%{opacity:0}4%{opacity:.9}}
+@media (prefers-reduced-motion:reduce){.node i{animation:none}.node:nth-child(3n) i{opacity:.6}html{scroll-behavior:auto}}
+section{padding:54px 0;border-top:1px solid var(--line)}
+h2{font:700 clamp(28px,5vw,40px)/1.1 "Bricolage Grotesque",sans-serif;margin:0 0 26px;letter-spacing:-.02em}
+.proj{display:grid;grid-template-columns:90px 1fr;gap:6px 24px;padding:26px 0;border-bottom:1px solid var(--line)}
+.proj:last-child{border-bottom:0}
+.yr{font:800 36px "Bricolage Grotesque",sans-serif;color:var(--accent)}
+.proj h3{font:700 22px/1.25 "Bricolage Grotesque",sans-serif;margin:0 0 6px}
+.tags{display:flex;flex-wrap:wrap;gap:6px;margin:0 0 12px;padding:0;list-style:none}
+.tags li{font-size:13px;padding:2px 10px;border-radius:99px;background:var(--soft);border:1px solid var(--line)}
+.proj ul{margin:0;padding-left:20px;color:var(--muted)}
+.proj li{margin-bottom:4px}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:34px}
+.skill{margin:0 0 16px}
+.skill dt{font-weight:600}
+.skill dd{margin:2px 0 0;color:var(--muted)}
+.edu{margin-bottom:20px}
+.edu b{display:block}
+.edu span{color:var(--muted);font-size:15px}
+.list{margin:0;padding-left:20px}
+.list li{margin-bottom:8px}
+.win{background:var(--accent);color:var(--accent-ink);border-radius:12px;padding:16px 20px;font-weight:600;margin-bottom:18px}
+.contact a.big{font:800 clamp(24px,5.5vw,52px)/1.1 "Bricolage Grotesque",sans-serif;text-decoration:none;word-break:break-all;color:var(--accent)}
+.links{display:flex;flex-wrap:wrap;gap:12px 26px;margin-top:24px}
+.links a{font-weight:600}
+footer{padding:30px 0 46px;color:var(--muted);font-size:14px;border-top:1px solid var(--line)}
+@media (max-width:720px){.two{grid-template-columns:1fr}.proj{grid-template-columns:1fr}nav a.h{display:none}.grid8{gap:5px}}
+</style>
+</head>
+<body>
+<div class="wrap">
+<header class="nav">
+  <a class="logo" href="#top">Vedant Pawar</a>
+  <nav><a class="h" href="#projects">Projects</a><a class="h" href="#skills">Skills</a><a class="h" href="#contact">Contact</a><button id="theme" type="button" aria-label="Toggle light or dark theme">Theme</button></nav>
+</header>
+
+<main id="top">
+<div class="hero">
+  <h1>Vedant<span>Pawar</span></h1>
+  <p class="lede">AI and Data Science student at KK Wagh, Nashik. I build <b>AI-powered developer tools</b>, distributed systems and web apps that solve practical problems.</p>
+  <div class="btns"><a class="btn p" href="#projects">See my projects</a><a class="btn" href="#contact">Get in touch</a></div>
+  <div class="nodes" aria-hidden="true">
+    <p>Nimbus, my distributed file store: each file is chunked across 8+ storage nodes.</p>
+    <div class="grid8"><div class="node"><i></i></div><div class="node"><i></i></div><div class="node"><i></i></div><div class="node"><i></i></div><div class="node"><i></i></div><div class="node"><i></i></div><div class="node"><i></i></div><div class="node"><i></i></div></div>
+  </div>
+</div>
+
+<section id="about">
+  <h2>About me</h2>
+  <p style="max-width:40em">I'm an AI and Data Science undergraduate with project experience in Python, C++, web development and AI-based applications. I've built academic projects, taken part in hackathons, and enjoy working with teams to solve problems. I'm interested in software engineering, AI/ML, and turning ideas into practical technology.</p>
+</section>
+
+<section id="projects">
+  <h2>Projects</h2>
+  <article class="proj"><div class="yr">2026</div><div>
+    <h3>AICoRex: AI-driven codebase evaluation and refactoring</h3>
+    <ul class="tags"><li>Python</li><li>AST</li><li>LLMs</li><li>Static code analysis</li></ul>
+    <ul><li>Analyzes and optimizes codebases using AST parsing and static analysis, improving issue detection accuracy by about 40% over traditional methods.</li><li>LLM-based modules refactor code automatically and improve readability, cutting manual effort by about 50%.</li></ul>
+  </div></article>
+  <article class="proj"><div class="yr">2025</div><div>
+    <h3>Nimbus: distributed file storage system</h3>
+    <ul class="tags"><li>Next.js</li><li>Node.js</li><li>Express.js</li><li>SQLite</li><li>AWS S3</li></ul>
+    <ul><li>Supports 100+ files across 8+ storage nodes, with file chunking, replication and load balancing for fault tolerance.</li><li>RESTful APIs handle file operations, metadata and node communication.</li><li>Next.js interface for upload, download, preview, sharing and real-time progress tracking.</li></ul>
+  </div></article>
+  <article class="proj"><div class="yr">2024</div><div>
+    <h3>VIKRSHI: farm and tool renting system</h3>
+    <ul class="tags"><li>Python</li><li>MongoDB</li><li>Razorpay</li><li>Twilio</li><li>Google Maps API</li><li>Tailwind CSS</li></ul>
+    <ul><li>Web platform where farmers rent agricultural tools and farmland.</li><li>Razorpay for secure payments and Twilio for SMS booking confirmations.</li><li>Google Maps shows land locations with geocoordinates for easier navigation.</li></ul>
+  </div></article>
+</section>
+
+<section id="skills">
+  <div class="two">
+    <div>
+      <h2>Skills</h2>
+      <dl>
+        <div class="skill"><dt>Languages</dt><dd>Python, C#, C++, JavaScript</dd></div>
+        <div class="skill"><dt>Web</dt><dd>HTML5, CSS3, React.js</dd></div>
+        <div class="skill"><dt>Databases</dt><dd>MongoDB, MySQL, SQL</dd></div>
+        <div class="skill"><dt>Tools</dt><dd>Git, GitHub, VS Code, Jupyter Notebook, Unity</dd></div>
+      </dl>
+    </div>
+    <div>
+      <h2>Education</h2>
+      <div class="edu"><b>K. K. Wagh Institute of Engineering Education and Research</b><span>B.Tech, Artificial Intelligence and Data Science. CGPA 7.8. 2023 to 2027, Nashik</span></div>
+      <div class="edu"><b>J.G. Natawadkar Junior College</b><span>HSC 12th Science. 77.17%. 2021 to 2023, Nandurbar</span></div>
+      <div class="edu"><b>H.G. Shroff High School</b><span>HSC 10th. 83.40%. Nandurbar</span></div>
+    </div>
+  </div>
+</section>
+
+<section id="more">
+  <div class="two">
+    <div>
+      <h2>Achievements</h2>
+      <div class="win">First Prize, DBMS Project Competition</div>
+      <ul class="list"><li>Participated in SUNHACKS 2026 at Sandip University, Nashik.</li><li>Participated in HackOverflow 3.0 at Pillai HOC College of Engineering and Technology.</li></ul>
+    </div>
+    <div>
+      <h2>Beyond the classroom</h2>
+      <ul class="list"><li><b>DESOC:</b> game development team member, Nov 2025 to Apr 2026</li><li><b>NSS:</b> volunteer, Aug 2025</li></ul>
+      <h2 style="margin-top:34px">Certifications</h2>
+      <ul class="list"><li>AWS Academy Cloud Foundations</li><li>Unity Essential Pathway</li><li>MKCL Advanced Excel</li><li>MKCL Digital Marketing</li></ul>
+    </div>
+  </div>
+</section>
+
+<section id="contact" class="contact">
+  <h2>Let's work together</h2>
+  <p style="color:var(--muted);max-width:32em">Open to internships, hackathon teams and project collaborations. The fastest way to reach me is email.</p>
+  <a class="big" href="mailto:vspawar011@gmail.com">vspawar011@gmail.com</a>
+  <div class="links">
+    <a href="https://github.com/Vedant-0115" target="_blank" rel="noopener">GitHub</a>
+    <a href="https://www.linkedin.com/in/vedant-pawar-0b1128296" target="_blank" rel="noopener">LinkedIn</a>
+    <a href="tel:+919561300511">+91 95613 00511</a>
+    <span style="color:var(--muted)">Maharashtra, India</span>
+  </div>
+</section>
+</main>
+<footer>© 2026 Vedant Pawar</footer>
+</div>
+<script>
+(function(){var b=document.getElementById('theme'),r=document.documentElement;
+b.addEventListener('click',function(){var dark=r.getAttribute('data-theme')?r.getAttribute('data-theme')==='dark':matchMedia('(prefers-color-scheme: dark)').matches;r.setAttribute('data-theme',dark?'light':'dark');});})();
+</script>
+</body>
+</html>
